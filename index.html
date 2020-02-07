@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir"ltr">
   <head>
     <meta charset="utf-8">
     <title>Animated Login Form</title>
@@ -14,9 +14,21 @@
         <span>i</span>
         <span>n</span>
       </h1>
-      <input type="text" name="" placeholder="Username">
-      <input type="password" name="" placeholder="Password">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
       <input type="submit" name="" value="Login">
+      <a href="" onclick="noAccount();return false;">Don't have an account?</a>
+      <br/>
+      <a href="" onclick="forgotPassword();return false;">Forgot password?</a>
     </form>
+    <div id="noAccount">
+      <h2>Use username Guest</h2>
+      <a href="" id="closeAccount" onclick="noAccount();return false;">Close</a>
+    </div>
+    <div id="forgotPassword">
+      <h2>Use password abc123</h2>
+      <a href="" id="closePassword" onclick="forgotPassword();return false;">Close</a>
+    </div>
+    <script type="text/javascript" src="indexScripts.js"></script>
   </body>
-<html>
+</html>

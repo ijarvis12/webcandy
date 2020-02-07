@@ -19,6 +19,8 @@ h1 {
   justify-content: center;
   font-family: 'Bad Script', cursive;
   font-size: 6em;
+  margin-bottom: 10px;
+  border-bottom: 3px solid blue;
 }
 
 h1 span {
@@ -71,6 +73,7 @@ h1 span:nth-child(5) {
   padding: 40px;
   background: #191919;
   text-align: center;
+  border-top: 3px solid #00b3ff;
 }
 
 .box input[type = "text"], .box input[type = "password"] {
@@ -114,4 +117,35 @@ h1 span:nth-child(5) {
 
 .box input[type = "submit"]:hover {
   background: #00b3ff;
+}
+
+a {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+#noAccount, #forgotPassword {
+  width: 500px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px white;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  text-align: center;
+  display: none;
+}
+
+#closeAccount, #closePassword {
+  padding: 10px 30px;
+  background: blue;
+  border-radius: 5px;
+  box-shadow: 0 0 10px white;
+  display: inline-block;
 }
