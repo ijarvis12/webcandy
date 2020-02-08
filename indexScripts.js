@@ -18,3 +18,7 @@ function forgotPassword() {
     forgotPass.style.display = "none";
   }
 }
+
+function load() {
+  window.location.href = "load.html";
+}
