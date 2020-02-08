@@ -19,6 +19,18 @@ function forgotPassword() {
   }
 }
 
+String.prototype.hashCode = function(){
+    var hash = 0;
+    for (var i = 0; i < this.length; i++) {
+        var character = this.charCodeAt(i);
+        hash = ((hash<<5)-hash)+character;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash;
+}
+
 function load() {
-  window.location.href = "load.html";
+  if(document.getElementById("username").value.hashCode() == 69156280 && document.getElementById("password").value.hashCode() == -1424436592) {
+    window.location.href = "load.html";
+  }
 }
